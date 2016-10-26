@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="../../static/css/layout.less" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <link rel="import" href="../../components/header/header.html?__inline">
+    <main class="container">
+        <div id="app" v-cloak>
+
+            <p class="main-title">绑定实例</p>
+
+            <div class="ef-form">
+                <div class="row-line">
+                    <label>设备名称:</label>
+                    <input v-model="name"/>
+                </div>
+                <div class="row-line">
+                    <label>系统名称:</label>
+                    <input v-model="os"/>
+                </div>
+                <button v-on:click="add" class="ef-btn">add</button>
+            </div>
+            <table class="ef-table">
+                <thead class="tb-header">
+                    <tr>
+                        <td>设备名称</td>
+                        <td>系统名称</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="d in devices">
+                        <td>{{d.device_name}}</td>
+                        <td>{{d.display}}</td>
+                        <td><a class="ef-s-btn"  v-on:click="remove($index)">x</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="main-title">组件实例</p>
+            <filter-list></filter-list>
+        </div>
+
+    </main>
+    <link rel="import" href="../../components/footer/footer.html?__inline">
+    <script type="text/javascript" src="../../lib/require/2.1.11/require.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

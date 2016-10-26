@@ -1,0 +1,92 @@
+.noframe {
+  margin: 0;
+  padding: 0;
+}
+
+body,html{
+  .noframe;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  color: #34495e;
+}
+
+/*处理avalon闪屏*/
+[ms-controller]{
+  display: none
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.container{
+  margin: 30px 50px;
+}
+
+.btn{
+  outline: none;
+  background-color: #333;
+  border: solid 1px #ccc;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.ef-btn{
+  padding: 7px 20px;
+  .btn;
+
+  &:hover{
+    background-color: #666;
+  }
+}
+
+.ef-s-btn{
+  padding: 2px 7px;
+  .btn;
+
+  &:hover{
+    background-color: #666;
+  }
+}
+
+.ef-form{
+  margin: 20px 40px;
+
+  .row-line{
+    margin: 10px 0;
+  }
+
+  input{
+    outline: none;
+    border: solid 1px #ddd;
+    padding: 5px 8px;
+  }
+}
+
+.ef-table{
+  margin: 20px 40px;
+  font-size: 13px;
+
+  .tb-header{
+    background-color: #780;
+    color: #fff;
+  }
+
+  th{
+    font-weight: bold;
+  }
+
+  th,td{
+    padding: 8px 40px 8px 5px;
+  }
+
+  tbody tr:nth-child(odd){
+     background-color: #ddd;
+  }
+}
+
+.main-title{
+  font-size: 26px;
+  font-weight: bold;
+}
