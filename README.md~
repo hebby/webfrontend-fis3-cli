@@ -1,5 +1,5 @@
 ## 基于fis工程化的前端项目模板
-FIS3 + AMD + vue + LESS 配置
+FIS3 + AMD + avalon + LESS 配置
 
 - 安装`fis3`
   - `npm install -g fis3`
